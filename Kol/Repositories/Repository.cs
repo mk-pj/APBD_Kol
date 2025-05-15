@@ -7,8 +7,6 @@ public class Repository(IConfiguration configuration) : IRepository
 {
     private readonly string _connectionString = configuration.GetConnectionString("Default") ?? string.Empty;
     
-    
-
 
     // public async Task<bool> CheckIfAnimalExists(int animalId)
     // {
