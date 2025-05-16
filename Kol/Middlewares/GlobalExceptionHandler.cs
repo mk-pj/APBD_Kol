@@ -44,6 +44,7 @@ public class GlobalExceptionHandler(RequestDelegate next, ILogger<GlobalExceptio
         }
     }
 
+    
     private static async Task HandleExceptionAsync(HttpContext context, HttpStatusCode statusCode, string message)
     {
         context.Response.ContentType = "application/json";
